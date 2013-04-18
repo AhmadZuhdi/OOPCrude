@@ -1,0 +1,19 @@
+18 - 04 - 2013
+	-> ReWrite the Code
+
+03 - 03 - 2013
+	-> Delete : Proses dapat menggunakan 2 Field atau lebih dalam where clause
+	-> Penambahan Fungsi Baru : Check(); | Berfunsi untuk validasi keberhasilan Proses
+	-> Error Handling : Mengunnakan Msgbox sebagai media pemberitahu | versi sebelumnya hanya menggunakan echo biasa
+	
+15 - 01 - 2013
+	-> mengganti (,) menjadi (;) saat menentukan Field Dan Value
+	-> memperbaiki error fungsi insert saat value yang di masukkan null
+
+29 - 01 - 2013
+	-> Tulis ulang semua script
+	-> Cara baru dalam men-Setting
+
+Bug yang di Ketahui
+	-> jika value terdapat karakter pembatas (;)
+	   maka akan terbaca sebagai 2 value
