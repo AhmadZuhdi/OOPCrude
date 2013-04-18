@@ -1,0 +1,34 @@
+Body{
+	width:1200px;
+	min-height:500px;
+	margin:30px auto;
+}
+
+#Wrapper{
+
+}
+
+#Nav{
+	Border:1px solid #E6E6E6;
+	width:200px;
+	Background:#E6E6E6;
+	margin:30px auto;
+	position:fixed;
+}
+
+#nav ul{
+	list-style: none;
+}
+
+
+#Konten{
+	border-left:1px solid #E6E6E6;
+	width:900px;
+	min-height: 500px;
+	padding:20px;
+	margin-left:220px;
+}
+
+.blue{
+	Color:#0000b8;
+}
