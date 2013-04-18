@@ -1,6 +1,6 @@
 18 - 04 - 2013
 	-> ReWrite the Code
-
+	-> a new method to declare
 03 - 03 - 2013
 	-> Delete : Proses dapat menggunakan 2 Field atau lebih dalam where clause
 	-> Penambahan Fungsi Baru : Check(); | Berfunsi untuk validasi keberhasilan Proses
