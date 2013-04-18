@@ -9,6 +9,7 @@ Latest Version	: v0.1f
 1. Create Connection
 
 <?PHP
+
 	include "class.sql.php";
 
 	$Con = new Connection;
@@ -21,7 +22,7 @@ Latest Version	: v0.1f
 
 ?>
 
-2. Insert Procedure
+2. Insert Procedure<BR>
 	a. Use Default Delimiter
 
 		<?PHP
@@ -55,7 +56,7 @@ Latest Version	: v0.1f
 			
 		?>
 
-3. Update Procedure
+3. Update Procedure<BR>
 	a. Use Default Delimiter
 		
 		<?PHP
@@ -111,7 +112,7 @@ Latest Version	: v0.1f
 
 		?>
 
-4. Delete Procedure
+4. Delete Procedure<BR>
 	a. Use Default Delimiter
 
 		<?PHP
