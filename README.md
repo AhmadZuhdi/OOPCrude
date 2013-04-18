@@ -1,26 +1,26 @@
 OOPCrude is a PHP Library that do CRUDE (Create, Update, Delete) procedure with a more simple way
 
-Project Start	: 20 Januari 2013
-Author			: Ahmad Zuhdi
-Latest Version	: v0.1f
+Project Start	: 20 Januari 2013<br>
+Author			: Ahmad Zuhdi<br>
+Latest Version	: v0.1f<br>
 
 .: How to Use :.
 
 1. Create Connection
 
-<?PHP
+	<?PHP
 
-	include "class.sql.php";
+		include "class.sql.php";
 
-	$Con = new Connection;
-	$Con->Host = "locahost";
-	$Con->User = "root"; //Change to your User
-	$Con->Password = "" //Change to Your Password
-	$Con->dbName = "database_name"; //insert your Database name
+		$Con = new Connection;
+		$Con->Host = "locahost";
+		$Con->User = "root"; //Change to your User
+		$Con->Password = "" //Change to Your Password
+		$Con->dbName = "database_name"; //insert your Database name
 
-	$Con->Connect(); //Connecting to database
+		$Con->Connect(); //Connecting to database
 
-?>
+	?>
 
 2. Insert Procedure<BR>
 	a. Use Default Delimiter
