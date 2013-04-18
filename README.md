@@ -8,8 +8,6 @@ Latest Version	: v0.1f<br>
 
 1. Create Connection
 
-	<?PHP
-
 		include "class.sql.php";
 
 		$Con = new Connection;
@@ -19,8 +17,6 @@ Latest Version	: v0.1f<br>
 		$Con->dbName = "database_name"; //insert your Database name
 
 		$Con->Connect(); //Connecting to database
-
-	?>
 
 2. Insert Procedure<BR>
 	a. Use Default Delimiter
