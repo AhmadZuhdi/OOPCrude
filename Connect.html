@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>OOPCrude Manual</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link rel="stylesheet" type="text/css" href="css/global.css" media="screen">
+	    <script src="js/jquery-1.9.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container-fluid" id="wrapper">
+		  	<div class="row-fluid">
+		    	<div class="span2 img-rounded" id="Nav">
+		      		<div class="dropdown">
+					  	<ul class="nav nav-list">
+					  		<li class="nav-header">SQL Procedure With OOP</li>
+						    <li><a tabindex="-1" href="index.html">Introduction</a></li>
+						    
+						    <li class="nav-header">Procedure</li>
+							<li><a tabindex="-1" href="Connect.html">Membuat Koneksi</a></li>
+						    <li><a tabindex="-1" href="Insert.html">Prosedur Insert</a></li>
+						    <li><a tabindex="-1" href="Update.html">Prosedur Update</a></li>
+						    <li><a tabindex="-1" href="Delete.html">Prosedur Delete</a></li>
+							
+							<li class="nav-header">Misc Tutorial</li>
+							<li><a tabindex="-1" href="Delimiter.html">Delimiter</a></li>
+
+					  	</ul>
+					</div>
+		    	</div>
+
+		    	<div class="span10" id="Konten">
+<h1>Membuat Koneksi</h1>
+		      					<hr>
+		      					<pre>	
+&lt;?<font class="text-error">PHP</font>
+	include "class.sql.php";
+
+	<font class="text-success">$Con</font> = <font class="text-info">new</font> Connection;
+	<font class="text-success">$Con</font>->Host = "locahost";
+	<font class="text-success">$Con</font>->User = "root"; <font class="muted">//Ganti sesuai dengan username di host</font>
+	<font class="text-success">$Con</font>->Password = "" <font class="muted">//Ganti sesuai denga password di host</font>
+	<font class="text-success">$Con</font>->dbName = ""; <font class="muted">//Masukkan Nama database yang akan di akses</font>
+
+	<font class="text-success">$Con</font>-><font class="text-success">Connect</font>(); <font class="muted">//Melakukan Koneksi ke database</font>
+
+?&gt;
+		      					</pre>
+    			</div>
+		  	</div>
+		</div>
+	</body>
+</html>

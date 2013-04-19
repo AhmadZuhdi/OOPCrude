@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>OOPCrude Manual</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link rel="stylesheet" type="text/css" href="css/global.css" media="screen">
+	    <script src="js/jquery-1.9.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container-fluid" id="wrapper">
+		  	<div class="row-fluid">
+		    	<div class="span2 img-rounded" id="Nav">
+		      		<div class="dropdown">
+					  	<ul class="nav nav-list">
+					  		<li class="nav-header">SQL Procedure With OOP</li>
+						    <li><a tabindex="-1" href="index.html">Introduction</a></li>
+						    
+						    <li class="nav-header">Procedure</li>
+							<li><a tabindex="-1" href="Connect.html">Membuat Koneksi</a></li>
+						    <li><a tabindex="-1" href="Insert.html">Prosedur Insert</a></li>
+						    <li><a tabindex="-1" href="Update.html">Prosedur Update</a></li>
+						    <li><a tabindex="-1" href="Delete.html">Prosedur Delete</a></li>
+							
+							<li class="nav-header">Misc Tutorial</li>
+							<li><a tabindex="-1" href="Delimiter.html">Delimiter</a></li>
+
+					  	</ul>
+					</div>
+		    	</div>
+
+		    	<div class="span10" id="Konten">
+<h1>Membuat Prosedur Insert</h1>
+		      					<hr>
+		      					1. Menggunakan Default Delimiter
+<pre>
+&lt;?<font class="text-error">PHP</font>
+
+	include "class.sql.php"; <font class="muted">//Jika sudah di include, tidak perlu di include lagi</font>
+
+	<font class="text-success">$i</font> = <font class="text-info">new</font> sql_insert;
+	<font class="text-success">$i</font>->Table = "Nama_Tabel" <font class="muted">//Sesuaikan dengan Nama Table yang akan di insert</font>
+	<font class="text-success">$i</font>->Field = "Field_No1;Field_No2;Field_No3"; <font class="muted">//Sesuaikan dengan Nama Field yang ada di dalam Table</font>
+	<font class="text-success">$i</font>->Value = "Value_No1;Value_No2;Value_No3"; <font class="muted">//Sesuaikan dengan jumlah Field dan urutannya</font>
+	<font class="text-success">$i</font>-><font class="text-success">Insert</font>() <font class="muted">//Lakukan Proses Insert</font>
+	
+?&gt;
+</pre>
+								2. Menggunakan Custom Delimiter
+<pre>
+&lt;?<font class="text-error">PHP</font>
+
+	include "class.sql.php"; <font class="muted">//Jika sudah di include, tidak perlu di include lagi</font>
+
+	<font class="text-success">$i</font> = <font class="text-info">new</font> sql_insert;
+	<font class="text-success">$i</font>->Delimiter = "~";
+	<font class="text-success">$i</font>->Table = "Nama_Tabel" <font class="muted">//Sesuaikan dengan Nama Table yang akan di insert</font>
+	<font class="text-success">$i</font>->Field = "Field_No1~Field_No2~Field_No3"; <font class="muted">//Sesuaikan dengan Nama Field yang ada di dalam Table</font>
+	<font class="text-success">$i</font>->Value = "Value_No1~Value_No2~Value_No3"; <font class="muted">//Sesuaikan dengan jumlah Field dan urutannya</font>
+	<font class="text-success">$i</font>-><font class="text-success">Insert</font>() <font class="muted">//Lakukan Proses Insert</font>
+	
+?&gt;
+</pre>
+    			</div>
+		  	</div>
+		</div>
+	</body>
+</html>
